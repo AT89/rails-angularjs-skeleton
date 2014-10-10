@@ -1,0 +1,2 @@
+rails-angularjs-skeleton
+========================
