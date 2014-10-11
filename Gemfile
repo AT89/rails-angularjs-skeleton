@@ -38,6 +38,8 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+#thin server
+gem 'thin', '~> 1.6.3'
 
 #bower
 gem'bower-rails', '~> 0.9.0'
