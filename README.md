@@ -3,12 +3,15 @@ rails-angularjs-skeleton
 
 ### 1. Gemfile
 #### Backend
-  * API Versioning: defaults to [versionist ~> 1.3.0](https://rubygems.org/gems/versionist).
-  * JSON Templating: defaults to [JBuilder ~> 2.2.2](https://github.com/rails/jbuilder).
-  * Server: [thin ~> 1.6.3](https://rubygems.org/gems/thin).
+  * API Versioning: defaults to [versionist ~> 1.3.0](https://rubygems.org/gems/versionist)
+  * JSON Templating: defaults to [JBuilder ~> 2.2.2](https://github.com/rails/jbuilder)
+  * Server: [thin ~> 1.6.3](https://rubygems.org/gems/thin)
+  * Testing
+    - [rspec-rails ~> 3.0.0](https://rubygems.org/gems/rspec-rails)
+    - [factory_girl ~> 4.4.0](https://rubygems.org/gems/factory_girl)
 
 #### Frontend
-  * 
+  * [bootstrap-sass ~> 3.2.0.2](https://rubygems.org/gems/bootstrap-sass)
 
 ### 2. To get up and running
   1. Make sure the bower components are installed by running `rake bower:install`.
@@ -29,3 +32,9 @@ rails-angularjs-skeleton
     - New controller
 
       `rails g versionist:new_controller <name> <module namespace>`
+
+### 4. References
+  * [todo-rails4-angularjs](https://github.com/mkwiatkowski/todo-rails4-angularjs).
+  * [Setting up an AngularJS and Rails 4.1 Project](http://start.jcolemorrison.com/setting-up-an-angularjs-and-rails-4-1-project/).
+  * [REST API Versioning](http://railscasts.com/episodes/350-rest-api-versioning).
+  * [Securing an API](http://railscasts.com/episodes/352-securing-an-api).
