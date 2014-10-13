@@ -11,7 +11,13 @@ rails-angularjs-skeleton
     - [factory_girl ~> 4.4.0](https://rubygems.org/gems/factory_girl)
 
 #### Frontend
+  * Through [bower-rails ~> 0.9.0](https://rubygems.org/gems/bower-rails)
+    - [angular-latest](https://github.com/angular/angular.js)
+    - [ui-router](https://github.com/angular-ui/ui-router)
+    - [restangular](https://github.com/mgonto/restangular)
+    - [underscore](https://github.com/jashkenas/underscore)
   * [bootstrap-sass ~> 3.2.0.2](https://rubygems.org/gems/bootstrap-sass)
+  * [jQuery](https://rubygems.org/gems/jquery-rails)
 
 ### 2. To get up and running
   1. Make sure the bower components are installed by running `rake bower:install`.
