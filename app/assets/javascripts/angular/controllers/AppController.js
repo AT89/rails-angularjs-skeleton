@@ -1,4 +1,4 @@
 angular.module('app').controller("AppController",
-  function ($scope){
+  function ($scope, Restangular){
     $scope.msg = "World";
   });

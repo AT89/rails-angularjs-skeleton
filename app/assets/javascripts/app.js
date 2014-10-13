@@ -1,6 +1,7 @@
 app = angular.module('app', [
-  'ui.router', //angular-ui-router
-  'templates', //angular-rails-templates
+  'ui.router',   //angular-ui-router
+  'templates',   //angular-rails-templates
+  'restangular', //restangular
   ]);
 
 $(document).on('ready page:load',function(){
@@ -8,12 +9,12 @@ $(document).on('ready page:load',function(){
     angular.bootstrap(document.body, ['app'])
 });
 
-//routing
-app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
+app.config(function($stateProvider   , $urlRouterProvider,
+                    $locationProvider, RestangularProvider){
   //unmatched routes redirect to root
   $urlRouterProvider.otherwise("/");
 
-  //set up states
+  //set up states and routing
   $stateProvider
     .state('homeState',{
       url: '/',
@@ -22,4 +23,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
     })
 
   $locationProvider.html5Mode(true);
+
+  //restangular settings
+  RestangularProvider.setBaseUrl('/api/v1');
 });
