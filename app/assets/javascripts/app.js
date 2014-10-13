@@ -25,5 +25,5 @@ app.config(function($stateProvider   , $urlRouterProvider,
   $locationProvider.html5Mode(true);
 
   //restangular settings
-  RestangularProvider.setBaseUrl('/api/v1');
+  RestangularProvider.setBaseUrl('/v1');
 });

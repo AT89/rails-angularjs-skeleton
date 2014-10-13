@@ -1,6 +1,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require underscore
 //= require angular
 //= require angular-ui-router
 //= require restangular

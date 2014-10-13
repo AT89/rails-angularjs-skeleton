@@ -11,6 +11,7 @@ rails-angularjs-skeleton
   * 
 
 ### 2. To get up and running
+  1. Make sure the bower components are installed by running `rake bower:install`.
   1. Make .yml files from config/database.yml.example and config/secrets.yml.example (generate keys for secrets.yml using `rake secrets`).
   2. Things to rename to match your app's name:
     - The module name in ./config/application.rb.

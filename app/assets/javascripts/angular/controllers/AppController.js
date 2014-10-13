@@ -1,4 +1,4 @@
 angular.module('app').controller("AppController",
   function ($scope, Restangular){
-    $scope.msg = "World";
+    $scope.locations = Restangular.all('locations').getList().$object;
   });
