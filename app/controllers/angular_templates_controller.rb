@@ -1,5 +1,4 @@
 class AngularTemplatesController < ApplicationController
-
   def index
   end
 

@@ -5,7 +5,8 @@
       "angular"           : "latest",
       "angular-ui-router" : "latest",
       "restangular"       : "latest",
-      "underscore"        : "latest"
+      "underscore"        : "latest",
+      "angular-cookies"   : "latest"
     }
   },
   "vendor": {
