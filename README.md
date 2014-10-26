@@ -3,6 +3,7 @@ rails-angularjs-skeleton
 
 ### 1. Gemfile
 #### Backend
+  * [Rails 4.1.0](https://rubygems.org/gems/rails)
   * API Versioning: [versionist ~> 1.3.0](https://rubygems.org/gems/versionist)
   * JSON Templating: [JBuilder ~> 2.2.2](https://github.com/rails/jbuilder)
   * Server: [thin ~> 1.6.3](https://rubygems.org/gems/thin)
@@ -15,7 +16,7 @@ rails-angularjs-skeleton
 
 #### Frontend
   * Through [bower-rails ~> 0.9.0](https://rubygems.org/gems/bower-rails)
-    - [angular](https://github.com/angular/angular.js)
+    - [angular (1.x)](https://github.com/angular/angular.js)
     - [ui-router](https://github.com/angular-ui/ui-router)
     - [restangular](https://github.com/mgonto/restangular)
     - [underscore](https://github.com/jashkenas/underscore)
