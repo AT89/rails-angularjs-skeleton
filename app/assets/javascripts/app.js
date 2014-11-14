@@ -5,7 +5,7 @@ app = angular.module('app', [
   'ngCookies'    //angular-cookies
   ]);
 
-$(document).on('ready page:load',function(){
+$(document).ready(function(){
   if (!$('body').hasClass('ng-scope'))
     angular.bootstrap(document.body, ['app'])
 });
