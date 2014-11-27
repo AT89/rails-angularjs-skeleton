@@ -1,11 +1,14 @@
 <div class="ng-cloak">
-  <!-- navbar goes here with links to different states -->
-  <div id="navbar" ng-controller="AppController">
-    <a ui-sref='homeState'>Home Page</a>
-    <a ng-show="!isLoggedIn()" ui-sref='loginState'>Login</a>
-    <a ng-show="!isLoggedIn()" ui-sref='signUpState'>Sign Up</a>
-    <a ng-show="isLoggedIn()"  href='/' ng-click="logout()">Logout</a>
+  <div ng-controller="AppController">
+  	<div id="navbar">
+      <a ui-sref='homeState'>Home Page</a>
+      <a ng-show="user.isLoggedIn" ui-sref='locationState'>Locations</a>
+      <a ng-hide="user.isLoggedIn" ui-sref='loginState'>Login</a>
+      <a ng-hide="user.isLoggedIn" ui-sref='signUpState'>Sign Up</a>
+      <a ng-show="user.isLoggedIn" href='#' ng-click="logout()">Logout</a>
+    </div>
+
+  	<div ui-view></div>
   </div>
-  
-  <div ui-view></div>
 </div>
+

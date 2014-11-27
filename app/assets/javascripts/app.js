@@ -3,12 +3,14 @@ app = angular.module('app', [
   'templates',   //angular-rails-templates
   'restangular', //restangular
   'ngCookies'    //angular-cookies
-  ]);
+  ])
 
 $(document).ready(function(){
   if (!$('body').hasClass('ng-scope'))
     angular.bootstrap(document.body, ['app'])
 });
+
+app.value('urlToGoToAfterLogin', {url: '/'});
 
 app.config(['$stateProvider','$urlRouterProvider',
             '$locationProvider', '$httpProvider',
@@ -25,8 +27,9 @@ app.config(['$stateProvider','$urlRouterProvider',
       .state('homeState',{
         url: '/',
         templateUrl: 'hello.html',
-        controller : 'AppController'
-      }).state('locationState',{
+		controller: 'AppController'
+      })
+      .state('locationState',{
         url: '/locations',
         templateUrl: 'location.html',
         controller : 'LocController'
@@ -42,10 +45,6 @@ app.config(['$stateProvider','$urlRouterProvider',
         templateUrl: 'registrations/new.html',
         controller : 'SignUpController'
       })
-      .state('logoutState',{
-        controller : 'LogoutController'
-      })
-
 
     $locationProvider.html5Mode({
       enabled: true,
